@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct HealthTrackerApp: App {
+    let hkManager = HealthKitManager()
+    
     var body: some Scene {
         WindowGroup {
-            DashboardView()
+            HKPermissionPrimingView()
+                .environment(hkManager)
         }
     }
 }
