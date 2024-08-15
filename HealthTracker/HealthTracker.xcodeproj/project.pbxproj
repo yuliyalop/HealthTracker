@@ -12,6 +12,7 @@
 		ADA6AB912C6A82D500172354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA6AB902C6A82D500172354 /* Assets.xcassets */; };
 		ADA6AB942C6A82D500172354 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA6AB932C6A82D500172354 /* Preview Assets.xcassets */; };
 		ADA6AB9B2C6A9E0400172354 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6AB9A2C6A9E0400172354 /* HealthDataListView.swift */; };
+		ADA6AB9D2C6E723300172354 /* HKPermissionPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6AB9C2C6E723300172354 /* HKPermissionPrimingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		ADA6AB902C6A82D500172354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADA6AB932C6A82D500172354 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ADA6AB9A2C6A9E0400172354 /* HealthDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataListView.swift; sourceTree = "<group>"; };
+		ADA6AB9C2C6E723300172354 /* HKPermissionPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKPermissionPrimingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				ADA6AB8C2C6A82D300172354 /* HealthTrackerApp.swift */,
 				ADA6AB8E2C6A82D300172354 /* DashboardView.swift */,
 				ADA6AB9A2C6A9E0400172354 /* HealthDataListView.swift */,
+				ADA6AB9C2C6E723300172354 /* HKPermissionPrimingView.swift */,
 				ADA6AB902C6A82D500172354 /* Assets.xcassets */,
 				ADA6AB922C6A82D500172354 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA6AB9B2C6A9E0400172354 /* HealthDataListView.swift in Sources */,
+				ADA6AB9D2C6E723300172354 /* HKPermissionPrimingView.swift in Sources */,
 				ADA6AB8F2C6A82D300172354 /* DashboardView.swift in Sources */,
 				ADA6AB8D2C6A82D300172354 /* HealthTrackerApp.swift in Sources */,
 			);
