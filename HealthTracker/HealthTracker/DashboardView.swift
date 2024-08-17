@@ -91,10 +91,10 @@ struct DashboardView: View {
                 }
             }
             .padding()
-//            .task {
-//                await hkManager.addSimulatorData()
-//                isShowingPermissionPriming = !hasSeenPermissionPriming
-//            }
+            .task {
+                await hkManager.fetchWeights()
+                isShowingPermissionPriming = !hasSeenPermissionPriming
+            }
             .navigationTitle("Dashboard")
             .navigationDestination(for: HealthMetricContext.self) { metric in
                 HealthDataListView(metric: metric)

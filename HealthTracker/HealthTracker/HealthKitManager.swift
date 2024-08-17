@@ -14,6 +14,50 @@ import Observation
     
     let types: Set = [HKQuantityType(.stepCount), HKQuantityType(.bodyMass)]
     
+    func fetchStepCount() async {
+        let calendar = Calendar(identifier: .gregorian)
+        let today = calendar.startOfDay(for: .now)
+        
+        let endDate = calendar.date(byAdding: .day, value: 1, to: today)!
+        let startDate = calendar.date(byAdding: .day, value: -28, to: endDate)!
+        
+        let queryPredicate = HKQuery.predicateForSamples(withStart: startDate, end: endDate)
+        let samplePredicate = HKSamplePredicate.quantitySample(type: HKQuantityType(.stepCount), predicate: queryPredicate)
+        
+        let everyDay = DateComponents(day:1)
+        
+        let sumOfStepsQuery = HKStatisticsCollectionQueryDescriptor(
+            predicate: samplePredicate  ,
+            options: .cumulativeSum,
+            anchorDate: endDate,
+            intervalComponents: everyDay)
+
+
+        let stepCounts = try! await sumOfStepsQuery.result(for: store)
+    }
+    
+    func fetchWeights() async {
+        let calendar = Calendar(identifier: .gregorian)
+        let today = calendar.startOfDay(for: .now)
+        
+        let endDate = calendar.date(byAdding: .day, value: 1, to: today)!
+        let startDate = calendar.date(byAdding: .day, value: -28, to: endDate)!
+        
+        let queryPredicate = HKQuery.predicateForSamples(withStart: startDate, end: endDate)
+        let samplePredicate = HKSamplePredicate.quantitySample(type: HKQuantityType(.bodyMass), predicate: queryPredicate)
+        
+        let everyDay = DateComponents(day:1)
+        
+        let sumOfWeightQuery = HKStatisticsCollectionQueryDescriptor(
+            predicate: samplePredicate  ,
+            options: .mostRecent,
+            anchorDate: endDate,
+            intervalComponents: everyDay)
+
+
+        let weights = try! await sumOfWeightQuery.result(for: store)
+    }
+    
 //    func addSimulatorData() async {
 //        var mockSamples: [HKObject] = []
 //        
