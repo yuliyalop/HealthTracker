@@ -13,7 +13,7 @@ struct HealthTrackerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HKPermissionPrimingView()
+            DashboardView()
                 .environment(hkManager)
         }
     }
