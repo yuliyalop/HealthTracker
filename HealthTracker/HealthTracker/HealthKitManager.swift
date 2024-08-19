@@ -14,6 +14,9 @@ import Observation
     
     let types: Set = [HKQuantityType(.stepCount), HKQuantityType(.bodyMass)]
     
+    var stepsData: [HealthMetric] = []
+    var weightsData: [HealthMetric] = []
+    
     func fetchStepCount() async {
         let calendar = Calendar(identifier: .gregorian)
         let today = calendar.startOfDay(for: .now)
@@ -34,6 +37,10 @@ import Observation
 
 
         let stepCounts = try! await sumOfStepsQuery.result(for: store)
+        
+        stepsData = stepCounts.statistics().map({
+            .init(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
+        })
     }
     
     func fetchWeights() async {
@@ -56,6 +63,10 @@ import Observation
 
 
         let weights = try! await sumOfWeightQuery.result(for: store)
+        
+        weightsData = weights .statistics().map({
+            .init(date: $0.startDate, value: $0.mostRecentQuantity()?.doubleValue(for: .pound()) ?? 0)
+        })
     }
     
 //    func addSimulatorData() async {

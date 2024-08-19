@@ -14,6 +14,7 @@
 		ADA6AB9B2C6A9E0400172354 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6AB9A2C6A9E0400172354 /* HealthDataListView.swift */; };
 		ADA6AB9D2C6E723300172354 /* HKPermissionPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6AB9C2C6E723300172354 /* HKPermissionPrimingView.swift */; };
 		ADA6AB9F2C6E788000172354 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6AB9E2C6E788000172354 /* HealthKitManager.swift */; };
+		ADC52E242C73CA520039CF2B /* HealthMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC52E232C73CA520039CF2B /* HealthMetric.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ADA6AB9C2C6E723300172354 /* HKPermissionPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKPermissionPrimingView.swift; sourceTree = "<group>"; };
 		ADA6AB9E2C6E788000172354 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		ADA6ABA02C6E7FC200172354 /* HealthTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthTracker.entitlements; sourceTree = "<group>"; };
+		ADC52E232C73CA520039CF2B /* HealthMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMetric.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				ADA6AB8E2C6A82D300172354 /* DashboardView.swift */,
 				ADA6AB9A2C6A9E0400172354 /* HealthDataListView.swift */,
 				ADA6AB9C2C6E723300172354 /* HKPermissionPrimingView.swift */,
+				ADC52E232C73CA520039CF2B /* HealthMetric.swift */,
 				ADA6AB9E2C6E788000172354 /* HealthKitManager.swift */,
 				ADA6AB902C6A82D500172354 /* Assets.xcassets */,
 				ADA6AB922C6A82D500172354 /* Preview Content */,
@@ -153,6 +156,7 @@
 				ADA6AB8F2C6A82D300172354 /* DashboardView.swift in Sources */,
 				ADA6AB9F2C6E788000172354 /* HealthKitManager.swift in Sources */,
 				ADA6AB8D2C6A82D300172354 /* HealthTrackerApp.swift in Sources */,
+				ADC52E242C73CA520039CF2B /* HealthMetric.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
