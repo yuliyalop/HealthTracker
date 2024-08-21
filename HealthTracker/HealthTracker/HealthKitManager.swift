@@ -35,12 +35,15 @@ import Observation
             anchorDate: endDate,
             intervalComponents: everyDay)
 
-
-        let stepCounts = try! await sumOfStepsQuery.result(for: store)
-        
-        stepsData = stepCounts.statistics().map({
-            .init(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
-        })
+        do {
+            let stepCounts = try await sumOfStepsQuery.result(for: store)
+            
+            stepsData = stepCounts.statistics().map({
+                .init(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
+            })
+        } catch {
+            
+        }
     }
     
     func fetchWeights() async {
@@ -62,11 +65,15 @@ import Observation
             intervalComponents: everyDay)
 
 
-        let weights = try! await sumOfWeightQuery.result(for: store)
-        
-        weightsData = weights .statistics().map({
-            .init(date: $0.startDate, value: $0.mostRecentQuantity()?.doubleValue(for: .pound()) ?? 0)
-        })
+        do {
+            let weights = try await sumOfWeightQuery.result(for: store)
+            
+            weightsData = weights .statistics().map({
+                .init(date: $0.startDate, value: $0.mostRecentQuantity()?.doubleValue(for: .pound()) ?? 0)
+            })
+        } catch {
+            
+        }
     }
     
 //    func addSimulatorData() async {
