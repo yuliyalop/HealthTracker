@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD6FB6CA2C97453600963900 /* ChartDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FB6C92C97453600963900 /* ChartDataTypes.swift */; };
+		AD6FB6CC2C97453E00963900 /* ChartMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FB6CB2C97453E00963900 /* ChartMath.swift */; };
+		AD6FB6CF2C97465700963900 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FB6CE2C97465700963900 /* Date+Ext.swift */; };
+		AD6FB6D22C974A0200963900 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = AD6FB6D12C974A0200963900 /* Algorithms */; };
 		AD9BB46B2C7E4CAE00E6B107 /* StepBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BB46A2C7E4CAE00E6B107 /* StepBarChart.swift */; };
 		ADA6AB8D2C6A82D300172354 /* HealthTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6AB8C2C6A82D300172354 /* HealthTrackerApp.swift */; };
 		ADA6AB8F2C6A82D300172354 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6AB8E2C6A82D300172354 /* DashboardView.swift */; };
@@ -19,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD6FB6C92C97453600963900 /* ChartDataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataTypes.swift; sourceTree = "<group>"; };
+		AD6FB6CB2C97453E00963900 /* ChartMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartMath.swift; sourceTree = "<group>"; };
+		AD6FB6CE2C97465700963900 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		AD9BB46A2C7E4CAE00E6B107 /* StepBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepBarChart.swift; sourceTree = "<group>"; };
 		ADA6AB892C6A82D300172354 /* HealthTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA6AB8C2C6A82D300172354 /* HealthTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTrackerApp.swift; sourceTree = "<group>"; };
@@ -37,16 +44,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6FB6D22C974A0200963900 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD6FB6CD2C97464800963900 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD6FB6CE2C97465700963900 /* Date+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AD9BB46C2C7E510700E6B107 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
 				AD9BB46A2C7E4CAE00E6B107 /* StepBarChart.swift */,
+				AD6FB6C92C97453600963900 /* ChartDataTypes.swift */,
+				AD6FB6CB2C97453E00963900 /* ChartMath.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -98,6 +116,7 @@
 			children = (
 				ADA6ABA02C6E7FC200172354 /* HealthTracker.entitlements */,
 				ADA6AB8C2C6A82D300172354 /* HealthTrackerApp.swift */,
+				AD6FB6CD2C97464800963900 /* Extensions */,
 				AD9BB46F2C7E512C00E6B107 /* Managers */,
 				AD9BB46E2C7E512700E6B107 /* Model */,
 				AD9BB46D2C7E510C00E6B107 /* Screens */,
@@ -132,6 +151,9 @@
 			dependencies = (
 			);
 			name = HealthTracker;
+			packageProductDependencies = (
+				AD6FB6D12C974A0200963900 /* Algorithms */,
+			);
 			productName = HealthTracker;
 			productReference = ADA6AB892C6A82D300172354 /* HealthTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -160,6 +182,9 @@
 				Base,
 			);
 			mainGroup = ADA6AB802C6A82D300172354;
+			packageReferences = (
+				AD6FB6D02C974A0200963900 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = ADA6AB8A2C6A82D300172354 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -186,6 +211,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6FB6CC2C97453E00963900 /* ChartMath.swift in Sources */,
+				AD6FB6CA2C97453600963900 /* ChartDataTypes.swift in Sources */,
 				ADA6AB9B2C6A9E0400172354 /* HealthDataListView.swift in Sources */,
 				ADA6AB9D2C6E723300172354 /* HKPermissionPrimingView.swift in Sources */,
 				AD9BB46B2C7E4CAE00E6B107 /* StepBarChart.swift in Sources */,
@@ -193,6 +220,7 @@
 				ADA6AB9F2C6E788000172354 /* HealthKitManager.swift in Sources */,
 				ADA6AB8D2C6A82D300172354 /* HealthTrackerApp.swift in Sources */,
 				ADC52E242C73CA520039CF2B /* HealthMetric.swift in Sources */,
+				AD6FB6CF2C97465700963900 /* Date+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +430,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD6FB6D02C974A0200963900 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD6FB6D12C974A0200963900 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD6FB6D02C974A0200963900 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADA6AB812C6A82D300172354 /* Project object */;
 }
