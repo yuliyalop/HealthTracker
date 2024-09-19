@@ -12,6 +12,8 @@
 		AD6FB6CF2C97465700963900 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FB6CE2C97465700963900 /* Date+Ext.swift */; };
 		AD6FB6D22C974A0200963900 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = AD6FB6D12C974A0200963900 /* Algorithms */; };
 		AD6FB6D42C974F0B00963900 /* StepPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FB6D32C974F0B00963900 /* StepPieChart.swift */; };
+		AD6FB6D62C9C88A700963900 /* WeightLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FB6D52C9C88A700963900 /* WeightLineChart.swift */; };
+		AD6FB6D92C9C8A9900963900 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FB6D82C9C8A9900963900 /* MockData.swift */; };
 		AD9BB46B2C7E4CAE00E6B107 /* StepBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BB46A2C7E4CAE00E6B107 /* StepBarChart.swift */; };
 		ADA6AB8D2C6A82D300172354 /* HealthTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6AB8C2C6A82D300172354 /* HealthTrackerApp.swift */; };
 		ADA6AB8F2C6A82D300172354 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6AB8E2C6A82D300172354 /* DashboardView.swift */; };
@@ -28,6 +30,8 @@
 		AD6FB6CB2C97453E00963900 /* ChartMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartMath.swift; sourceTree = "<group>"; };
 		AD6FB6CE2C97465700963900 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		AD6FB6D32C974F0B00963900 /* StepPieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepPieChart.swift; sourceTree = "<group>"; };
+		AD6FB6D52C9C88A700963900 /* WeightLineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightLineChart.swift; sourceTree = "<group>"; };
+		AD6FB6D82C9C8A9900963900 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		AD9BB46A2C7E4CAE00E6B107 /* StepBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepBarChart.swift; sourceTree = "<group>"; };
 		ADA6AB892C6A82D300172354 /* HealthTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA6AB8C2C6A82D300172354 /* HealthTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTrackerApp.swift; sourceTree = "<group>"; };
@@ -61,6 +65,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		AD6FB6D72C9C8A7600963900 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AD6FB6D82C9C8A9900963900 /* MockData.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		AD9BB46C2C7E510700E6B107 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +80,7 @@
 				AD6FB6C92C97453600963900 /* ChartDataTypes.swift */,
 				AD6FB6CB2C97453E00963900 /* ChartMath.swift */,
 				AD6FB6D32C974F0B00963900 /* StepPieChart.swift */,
+				AD6FB6D52C9C88A700963900 /* WeightLineChart.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -119,6 +132,7 @@
 			children = (
 				ADA6ABA02C6E7FC200172354 /* HealthTracker.entitlements */,
 				ADA6AB8C2C6A82D300172354 /* HealthTrackerApp.swift */,
+				AD6FB6D72C9C8A7600963900 /* Utilities */,
 				AD6FB6CD2C97464800963900 /* Extensions */,
 				AD9BB46F2C7E512C00E6B107 /* Managers */,
 				AD9BB46E2C7E512700E6B107 /* Model */,
@@ -217,6 +231,7 @@
 				AD6FB6CC2C97453E00963900 /* ChartMath.swift in Sources */,
 				AD6FB6CA2C97453600963900 /* ChartDataTypes.swift in Sources */,
 				ADA6AB9B2C6A9E0400172354 /* HealthDataListView.swift in Sources */,
+				AD6FB6D92C9C8A9900963900 /* MockData.swift in Sources */,
 				ADA6AB9D2C6E723300172354 /* HKPermissionPrimingView.swift in Sources */,
 				AD9BB46B2C7E4CAE00E6B107 /* StepBarChart.swift in Sources */,
 				ADA6AB8F2C6A82D300172354 /* DashboardView.swift in Sources */,
@@ -224,6 +239,7 @@
 				ADA6AB8D2C6A82D300172354 /* HealthTrackerApp.swift in Sources */,
 				ADC52E242C73CA520039CF2B /* HealthMetric.swift in Sources */,
 				AD6FB6D42C974F0B00963900 /* StepPieChart.swift in Sources */,
+				AD6FB6D62C9C88A700963900 /* WeightLineChart.swift in Sources */,
 				AD6FB6CF2C97465700963900 /* Date+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
