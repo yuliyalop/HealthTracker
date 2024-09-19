@@ -45,15 +45,20 @@ struct DashboardView: View {
                     }
                     .pickerStyle(.segmented)
                     
-                    StepBarChart(selectedStat: selectedStat, chartData: hkManager.stepsData )
-                    
-                    StepPieChart(chartData: ChartMath.averageWeekdayCount(for: hkManager.stepsData))
+                    switch selectedStat {
+                    case .steps:
+                        StepBarChart(selectedStat: selectedStat, chartData: hkManager.stepsData )
+                        StepPieChart(chartData: ChartMath.averageWeekdayCount(for: hkManager.stepsData))
 
+                    case .weight:
+                        WeightLineChart(selectedStat: selectedStat, chartData: hkManager.weightsData)
+                    }
                 }
             }
             .padding()
             .task {
                 await hkManager.fetchStepCount()
+                await hkManager.fetchWeights()
                 isShowingPermissionPriming = !hasSeenPermissionPriming
             }
             .navigationTitle("Dashboard")
