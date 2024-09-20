@@ -52,6 +52,7 @@ struct DashboardView: View {
 
                     case .weight:
                         WeightLineChart(selectedStat: selectedStat, chartData: hkManager.weightsData)
+                        WeightDiffBarChart(chartData: ChartMath.averageDailyWeightsDiffs(for: hkManager.weightsDiffData))
                     }
                 }
             }
@@ -59,6 +60,7 @@ struct DashboardView: View {
             .task {
                 await hkManager.fetchStepCount()
                 await hkManager.fetchWeights()
+                await hkManager.fetchWeightsDifferentials()
                 isShowingPermissionPriming = !hasSeenPermissionPriming
             }
             .navigationTitle("Dashboard")
