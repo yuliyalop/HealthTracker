@@ -14,6 +14,7 @@
 		AD6FB6D42C974F0B00963900 /* StepPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FB6D32C974F0B00963900 /* StepPieChart.swift */; };
 		AD6FB6D62C9C88A700963900 /* WeightLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FB6D52C9C88A700963900 /* WeightLineChart.swift */; };
 		AD6FB6D92C9C8A9900963900 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FB6D82C9C8A9900963900 /* MockData.swift */; };
+		AD6FB6DB2C9D867C00963900 /* WeightDiffBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6FB6DA2C9D867C00963900 /* WeightDiffBarChart.swift */; };
 		AD9BB46B2C7E4CAE00E6B107 /* StepBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9BB46A2C7E4CAE00E6B107 /* StepBarChart.swift */; };
 		ADA6AB8D2C6A82D300172354 /* HealthTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6AB8C2C6A82D300172354 /* HealthTrackerApp.swift */; };
 		ADA6AB8F2C6A82D300172354 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6AB8E2C6A82D300172354 /* DashboardView.swift */; };
@@ -32,6 +33,7 @@
 		AD6FB6D32C974F0B00963900 /* StepPieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepPieChart.swift; sourceTree = "<group>"; };
 		AD6FB6D52C9C88A700963900 /* WeightLineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightLineChart.swift; sourceTree = "<group>"; };
 		AD6FB6D82C9C8A9900963900 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		AD6FB6DA2C9D867C00963900 /* WeightDiffBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightDiffBarChart.swift; sourceTree = "<group>"; };
 		AD9BB46A2C7E4CAE00E6B107 /* StepBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepBarChart.swift; sourceTree = "<group>"; };
 		ADA6AB892C6A82D300172354 /* HealthTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA6AB8C2C6A82D300172354 /* HealthTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTrackerApp.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				AD6FB6CB2C97453E00963900 /* ChartMath.swift */,
 				AD6FB6D32C974F0B00963900 /* StepPieChart.swift */,
 				AD6FB6D52C9C88A700963900 /* WeightLineChart.swift */,
+				AD6FB6DA2C9D867C00963900 /* WeightDiffBarChart.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD6FB6CC2C97453E00963900 /* ChartMath.swift in Sources */,
+				AD6FB6DB2C9D867C00963900 /* WeightDiffBarChart.swift in Sources */,
 				AD6FB6CA2C97453600963900 /* ChartDataTypes.swift in Sources */,
 				ADA6AB9B2C6A9E0400172354 /* HealthDataListView.swift in Sources */,
 				AD6FB6D92C9C8A9900963900 /* MockData.swift in Sources */,
